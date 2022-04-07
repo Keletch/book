@@ -1,3 +1,5 @@
+/*Global*/
+
 *{
     background-color: #000;
     color: #fff;
@@ -13,8 +15,33 @@
     text-align: center;
 }
 
+/*endGlobal*/
+
+/*containersGrid*/
+    .container,.container_2,.container_3,.container_4,.container_s{
+        display:grid;
+    }
+/*endContainersGrid*/
+
+/*insideContainers*/
+    .one,.two,.three,.four,.one_2,.two_2,.two_3,.one_3,.two_3,.one_4,.one_s{
+        padding: calc(2vh + 1vw);
+        border: 1px solid #fff;
+    }
+/*endInsideContainers*/
+    .container_2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container_3{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .container_4{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .container_s{
+        grid-template-columns: 1fr;
+    }
 .container{
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "one two" "three four";
@@ -22,30 +49,21 @@
 
 .one{
     grid-area: one;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .two{
     grid-area: two;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .three{
     grid-area: three;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .four{
     grid-area: four;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .container_s{
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "one_s";
@@ -53,12 +71,9 @@
 
 .one_s{
     grid-area: one_s;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .container_2{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "one_2 two_2 two_2 two_2";
@@ -66,18 +81,13 @@
 
 .one_2{
     grid-area: one_2;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .two_2{
     grid-area: two_2;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .container_3{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "one_3 one_3 one_3 two_3";
@@ -85,18 +95,13 @@
 
 .one_3{
     grid-area: one_3;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .two_3{
     grid-area: two_3;
-    padding: 10px;
-    border: 1px solid #fff;
 }
 
 .container_4{
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "one_4";
@@ -104,6 +109,4 @@
 
 .one_4{
     grid-area: one_4;
-    padding: 10px;
-    border: 1px solid #fff;
 }
