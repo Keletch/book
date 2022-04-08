@@ -18,7 +18,7 @@
 /*endGlobal*/
 
 /*containersGrid*/
-    .container,.container_2,.container_3,.container_4,.container_s{
+    .container,.container_2,.container_3,.container_4,.container_s,.container_f{
         display:grid;
     }
 /*endContainersGrid*/
@@ -26,6 +26,18 @@
 /*insideContainers*/
     .one,.two,.three,.four,.one_2,.two_2,.two_3,.one_3,.two_3,.one_4,.one_s{
         padding: calc(2vh + 1vw);
+        border: 1px solid #fff;
+    }
+
+    .one_f,.two_f,.three_f,.four_f,.five_f,.six_f,.seven_f,.eight_f,.nine_f,
+    .oone_f,.otwo_f,.othree_f,.ofour_f,.ofive_f,.osix_f,.oseven_f,.oeight_f,.onine_f,
+    .tone_f,.ttwo_f,.tthree_f,.tfour_f,.tfive_f,.tsix_f,.tseven_f,.teight_f,.tnine_f,
+    .trone_f,.trtwo_f,.trthree_f,.trfour_f,.trfive_f,.trsix_f,.trseven_f,.treight_f,.trnine_f,
+    .fone_f,.ftwo_f,.fthree_f,.ffour_f,.ffive_f,.fsix_f,.fseven_f,.feight_f,.fnine_f,
+    .fione_f,.fitwo_f,.fithree_f,.fifour_f,.fifive_f,.fisix_f,.fiseven_f,.fieight_f,.finine_f,
+    .sone_f,.stwo_f,.sthree_f,.sfour_f,.sfive_f,.ssix_f,.sseven_f,.seight_f,.snine_f,
+    .seone_f,.setwo_f{
+        padding: calc(.5vh + .5vw);
         border: 1px solid #fff;
     }
 /*endInsideContainers*/
@@ -109,4 +121,9 @@
 
 .one_4{
     grid-area: one_4;
+}
+
+.container_f{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
