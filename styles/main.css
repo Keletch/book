@@ -27,6 +27,12 @@
     .one,.two,.three,.four,.one_2,.two_2,.two_3,.one_3,.two_3,.one_4,.one_s{
         padding: calc(2vh + 1vw);
         border: 1px solid #fff;
+        box-shadow: 0px 10px 13px -7px #000000, inset 0px 0px 10px 2px rgb(0, 0, 0);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .one:hover,.two:hover,.three:hover,.four:hover,.one_2:hover,.two_2:hover,.two_3:hover,.one_3:hover,.two_3:hover,.one_4:hover,.one_s:hover{
+        box-shadow: 0px 10px 13px -7px #000000, inset 0px 0px 10px 3px rgb(255 255 255 / 75%);
     }
 
     .one_f,.two_f,.three_f,.four_f,.five_f,.six_f,.seven_f,.eight_f,.nine_f,
@@ -37,8 +43,22 @@
     .fione_f,.fitwo_f,.fithree_f,.fifour_f,.fifive_f,.fisix_f,.fiseven_f,.fieight_f,.finine_f,
     .sone_f,.stwo_f,.sthree_f,.sfour_f,.sfive_f,.ssix_f,.sseven_f,.seight_f,.snine_f,
     .seone_f,.setwo_f{
-        padding: calc(.5vh + .5vw);
+        padding: calc(.5vh + 2.5vw);
         border: 1px solid #fff;
+        background-color: #000; 
+        box-shadow: 0px 10px 13px -7px #000000, inset 0px 0px 10px 2px rgb(0, 0, 0);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .one_f:hover,.three_f:hover,.five_f:hover,.seven_f:hover,
+    .oone_f:hover,.othree_f:hover,.ofive_f:hover,.oseven_f:hover,.oeight_f:hover,
+    .tone_f:hover,.tthree_f:hover,.tfive_f:hover,.teight_f:hover,
+    .trone_f:hover,.trthree_f:hover,.trfive_f:hover,.trsix_f:hover,.treight_f:hover,
+    .fone_f:hover,.fthree_f:hover,.fsix_f:hover,.feight_f:hover,
+    .fione_f:hover,.fithree_f:hover,.fifour_f:hover,.fisix_f:hover,.fieight_f:hover,
+    .sone_f:hover,.sfour_f:hover,.ssix_f:hover,.seight_f:hover,
+    .seone_f:hover{
+        box-shadow: 0px 10px 13px -7px #000000, inset 0px 0px 10px 3px rgb(255 255 255 / 75%);
     }
 /*endInsideContainers*/
     .container_2{
